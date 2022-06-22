@@ -34,5 +34,22 @@ function getModals() {
   
   }
 
-  
 }
+
+
+function reset() {
+  let manyModals = document.getElementsByClassName("m");
+  
+    for(let i = 0; i < manyModals.length; i++)  {
+      manyModals[i].style.color = "";
+      manyModals[i].style.margin = "";
+      manyModals[i].style.backgroundColor = "";
+      manyModals[i].style.transform = "";
+      manyModals[i].style.transition = "500ms";
+    
+      
+    }
+}
+
+
+

@@ -1,0 +1,29 @@
+:root {
+  --displayProp: none;
+}
+
+.navContainer {
+  display: flex;
+  visibility:hidden;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  border: 1px solid gray;
+}
+
+.navContainer:hover {
+  background-color: blue;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgray;
+}
+
+/* Keyframes Animation */
+// @keyframes mymove {
+//   from {top: 0px;}
+//   to {top: -50px;}
+// }

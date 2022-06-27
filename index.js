@@ -9,47 +9,36 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+// Work on this one?
+function navHere() {
+ let mynav = document.getElementById("navContainer");
+  
+ mynav.style.display = "flex";
+ mynav.style.justifyContent = "center";
+  mynav.innerHTML = "Hey Nick";
+}
+
 function getModals() {
-  let manyModals = document.getElementsByClassName("m");
+  let multiModals = document.querySelectorAll(".multiModal");
  
-  for(let i = 0; i < manyModals.length; i++)  {
-    manyModals[i].style.backgroundColor = "red" 
-    manyModals[i].innerHTML = "I am now red";
-    manyModals[i].style.marginTop = "10px";
-    manyModals[i].style.marginBottom = "10px";
-    
-    manyModals[2].style.marginBottom = "50px";
-    manyModals[2].style.backgroundColor = "green";
-    manyModals[2].innerHTML = "I am number 2";
-    manyModals[2].style.transition = "5s";
-    manyModals[2].style.transform = "rotate(50deg)";
-  
-    
-    
-    manyModals[3].style.marginLeft = "50px";
-    manyModals[3].innerHTML = "Three is me";
-    manyModals[3].style.backgroundColor = "blue";
-    manyModals[3].style.transform = "rotate(-50deg)";
-    manyModals[3].style.transition = "5s";
-  
+  for(let i = 0; i < multiModals.length; i++)  {
+    multiModals[i].style.display = "flex";
+     multiModals[i].style.flexDirection = "column";
+    multiModals[i].style.justifyContent = "center";
+    multiModals[0].style.justifyContent = "end";
+    multiModals[2].style.justifyContent = "end";
+    multiModals[0].style.left = "50%";
+    multiModals[2].style.left = "25%";
   }
 
 }
 
-
 function reset() {
-  let manyModals = document.getElementsByClassName("m");
+  let multiModals = document.querySelectorAll(".multiModal");
   
-    for(let i = 0; i < manyModals.length; i++)  {
-      manyModals[i].style.color = "";
-      manyModals[i].style.margin = "";
-      manyModals[i].style.backgroundColor = "";
-      manyModals[i].style.transform = "";
-      manyModals[i].style.transition = "500ms";
-    
-      
+    for(let i = 0; i < multiModals.length; i++)  {
+      multiModals[i].style.display = "";
     }
 }
-
 
 
